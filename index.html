@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pasteles - Delicias y Tradición</title>
+  <style>
+    :root{--bg:#fff9f5;--accent:#d96b6b;--muted:#6b6b6b;--card:#fff}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#222;line-height:1.5}
+    header{background:linear-gradient(120deg,#fff 0%,#fff0 60%),url("https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=60") center/cover no-repeat;padding:4rem 1rem;color:#111;text-align:center}
+    header .title{background:rgba(255,255,255,0.85);display:inline-block;padding:1rem 1.4rem;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    main{max-width:1000px;margin:2rem auto;padding:0 1rem}
+    section.card{background:var(--card);border-radius:10px;padding:1.2rem;margin:1rem 0;box-shadow:0 6px 20px rgba(22,22,22,0.06)}
+    h2{color:var(--accent);margin-top:0}
+    .grid{display:grid;gap:1rem}
+    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+    .tipo img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+    .swatches{display:flex;gap:.6rem;flex-wrap:wrap}
+    .swatch{width:60px;height:60px;border-radius:8px;border:2px solid #fff;box-shadow:0 3px 8px rgba(0,0,0,0.08);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600}
+    .swatch small{font-size:10px;opacity:.9}
+    ul{padding-left:1.1rem;margin:0}
+    footer{text-align:center;padding:1.2rem;color:var(--muted);font-size:.9rem}
+    @media (max-width:560px){header{padding:2rem} .tipo img{height:120px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Pasteles: sabor, color y tradición</h1>
+      <p>Una breve guía sobre tipos, colores, rellenos e historia</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="tipos" class="card">
+      <h2>Tipos de pasteles</h2>
+      <div class="grid cols-3">
+        <article class="tipo">
+          <img src="https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=60" alt="Pastel clásico redondo">
+          <h3>Clásico de capas</h3>
+          <p>Pastel en capas con crema o buttercream, popular en bodas y cumpleaños.</p>
+        </article>
+        <article class="tipo">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=60" alt="Cupcakes">
+          <h3>Cupcakes</h3>
+          <p>Porciones individuales decoradas; fáciles de servir en eventos.</p>
+        </article>
+        <article class="tipo">
+          <img src="https://images.unsplash.com/photo-1606755962777-1b1a0d6b6bde?auto=format&fit=crop&w=800&q=60" alt="Tartas y cheesecakes">
+          <h3>Tartas y cheesecakes</h3>
+          <p>Texturas densas y sabores intensos, a menudo con frutas o chocolate.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="colores" class="card">
+      <h2>Colores más usados en fiestas de cumpleaños</h2>
+      <p>Los colores varían según la edad y el tema, pero estos son los más frecuentes:</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#FFD166"><small>Amarillo</small></div>
+        <div class="swatch" style="background:#06D6A0"><small>Verde menta</small></div>
+        <div class="swatch" style="background:#4D96FF"><small>Azul</small></div>
+        <div class="swatch" style="background:#FF6B6B"><small>Rosa/Rojo</small></div>
+        <div class="swatch" style="background:#C084FC"><small>Lavanda</small></div>
+        <div class="swatch" style="background:#F7C59F;color:#222"><small>Pastel neutro</small></div>
+      </div>
+      <p style="margin-top:.6rem;color:var(--muted)">Consejo: combina un color base con uno o dos acentos para un resultado armonioso.</p>
+    </section>
+
+    <section id="rellenos" class="card">
+      <h2>Rellenos de pastel más usados</h2>
+      <ul>
+        <li>Crema de mantequilla (buttercream) — versátil y moldeable.</li>
+        <li>Ganache de chocolate — intenso y elegante.</li>
+        <li>Crema pastelera — ideal con frutas y rellenos húmedos.</li>
+        <li>Mermeladas o coulis de frutas — aportan acidez y frescura.</li>
+        <li>Mascarpone o queso crema — común en red velvet y cheesecakes.</li>
+      </ul>
+    </section>
+
+    <section id="historia" class="card">
+      <h2>Breve historia de los pasteles</h2>
+      <p>Los pasteles tienen orígenes antiguos: en la Antigua Roma y Grecia ya se elaboraban dulces horneados para celebraciones. La versión moderna, con capas, cremas y técnicas de decoración complejas, se desarrolló en Europa entre los siglos XVII y XIX con avances en azúcar, huevos y levaduras. Hoy, los pasteles combinan tradiciones locales con técnicas globales, convirtiéndose en elementos centrales de bodas, cumpleaños y festividades.</p>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con cariño por tu sitio de pasteles • Imágenes de ejemplo de libre uso (Unsplash)
+  </footer>
+</body>
+</html>
